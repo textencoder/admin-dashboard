@@ -1,59 +1,141 @@
 :root {
-    --font-main: "Roboto", sans-serif;
+  --font-main: "Roboto", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
 }
 
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 nav {
-    background-color: dodgerblue;
-    grid-area: 1 / 1 / 3 / 2;
-    font-family: var(--font-main);
-    color: white;
-    display: grid;
-    grid-template-rows: 1fr 4fr 4fr;
+  background-color: dodgerblue;
+  grid-area: 1 / 1 / 3 / 2;
+
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
 }
 
-.menu, .settings {
-    font-size: 1.2rem;
-    font-weight: 500;
+.menu,
+.settings {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .menu {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);  
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .settings {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 header {
-    background-color: whitesmoke;
-    grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+  background-color: whitesmoke;
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
 }
 
 .top {
-    background-color: lightgreen;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search {
+  background-color: white;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+}
+
+.search-bar {
+  width: 80%;
+  height: 60%;
+  background-color: lightgray;
+  border-radius: 50px;
+}
+
+.account {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  place-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 20px;
 }
 
 .bottom {
-    background-color: lightcoral;
+  background-color: lightcoral;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.user-info {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-content: center;
+  place-items: center;
+}
+
+.picture-two {
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 40px;
+  border: 2px solid black;
+}
+
+.user-welcome {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  border: 2px solid black;
+}
+
+.actions {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  list-style-type: none;
+
+  li {
+    background-color: dodgerblue;
+    color: white;
+    width: 80%;
+    height: 40%;
+    border-radius: 50px;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 section {
-    background-color: lightgray;
-    grid-area: 2 / 2 / 3 / 3;
+  background-color: lightgray;
+  grid-area: 2 / 2 / 3 / 3;
 }
