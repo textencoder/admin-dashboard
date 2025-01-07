@@ -152,10 +152,21 @@ section {
 
 .project {
   background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+  }
 }
 
 aside {
-  background-color: lightblue;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
@@ -163,9 +174,50 @@ aside {
 }
 
 .announcements {
-  background-color: lightcoral;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 20px;
+  border-radius: 5px;
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+  }
 }
 
 .trending {
-  background-color: lightgreen;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: rgb(98, 98, 98);
+  }
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  grid-area: 1 / 1 / 3 / 2;
 }
