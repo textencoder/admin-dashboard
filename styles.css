@@ -108,7 +108,7 @@ header {
 .search-bar {
   width: 80%;
   height: 60%;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(231, 228, 240);
   border-radius: 50px;
   border: none;
   padding-left: 20px;
@@ -128,7 +128,6 @@ header {
 .profile-picture {
   width: 40px;
   height: 40px;
-  background-color: yellow;
   border-radius: 20px;
 }
 
@@ -150,7 +149,6 @@ header {
 .picture-two {
   width: 60px;
   height: 60px;
-  background-color: yellow;
   border-radius: 40px;
 }
 
@@ -197,7 +195,7 @@ header {
 }
 
 section {
-  background-color: lightgray;
+  background-color: rgb(231, 228, 240);
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template-columns: 3fr 1.25fr;
@@ -209,6 +207,17 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.projects::before {
+  content: "Your Projects";
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  left: 20px;
+  top: -10px;
 }
 
 .project {
@@ -267,6 +276,8 @@ aside {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 30px;
 
   h4 {
     font-size: 0.8rem;
@@ -287,6 +298,15 @@ aside {
   }
 }
 
+.announcements::before {
+  content: "Announcements";
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+
 .announcement {
   display: grid;
   place-items: center;
@@ -300,6 +320,17 @@ aside {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 30px;
+}
+
+.trending::before {
+  content: "Trending";
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  top: -30px;
 }
 
 .trending-user {
@@ -323,7 +354,6 @@ aside {
 .avatar {
   width: 40px;
   height: 40px;
-  background-color: gray;
   border-radius: 20px;
 }
 
