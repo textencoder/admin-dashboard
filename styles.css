@@ -48,7 +48,6 @@ nav {
 }
 
 header {
-  background-color: whitesmoke;
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-rows: 1fr 2fr;
@@ -89,6 +88,10 @@ header {
   place-items: center;
 }
 
+.user-name {
+  font-weight: 700;
+}
+
 .profile-picture {
   width: 40px;
   height: 40px;
@@ -97,31 +100,40 @@ header {
 }
 
 .bottom {
-  background-color: lightcoral;
   display: grid;
   grid-template-columns: 2fr 1.25fr;
 }
 
 .user-info {
-  background: lightblue;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  place-content: center;
+  grid-template-columns: auto auto;
   place-items: center;
+  justify-content: start;
+  align-content: center;
+  gap: 10px;
+  padding-left: 40px;
 }
 
 .picture-two {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: yellow;
   border-radius: 40px;
-  border: 2px solid black;
 }
 
 .user-welcome {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  border: 2px solid black;
+  grid-template-rows: 1fr 1.5fr;
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
 }
 
 .actions {
@@ -170,9 +182,11 @@ section {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
 
   h3 {
     font-size: 0.9rem;
+    margin-bottom: 5px;
   }
 
   p {
@@ -180,6 +194,19 @@ section {
     color: rgb(98, 98, 98);
     line-height: 1.5;
   }
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  background-color: rgb(255, 177, 31);
+  display: block;
+  border-radius: 5px 0 0 5px;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 aside {
