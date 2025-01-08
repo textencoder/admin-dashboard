@@ -62,19 +62,17 @@ nav {
 header {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
   z-index: 1;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .top {
-  background-color: lightgreen;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 .search {
-  background-color: white;
   justify-items: start;
   align-items: center;
   display: grid;
@@ -99,10 +97,10 @@ header {
 }
 
 .account {
-  background: lightblue;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   place-items: center;
+  padding: 10px;
 }
 
 .user-name {
